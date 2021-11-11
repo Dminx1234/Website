@@ -29,7 +29,7 @@ a{
 #about {
     border: 3px black solid;
     padding: 10px;
-    margin: 5% 25%;
+    margin: 5% 20%;
     background-color: tan;
 }
 
@@ -37,14 +37,14 @@ a{
 {
     border: 3px black solid;
     padding: 10px;
-    margin: 5% 25%;
+    margin: 5% 20%;
     background-color: tan;
 }
 
 #contact{
     border: 3px black solid;
-    padding: 10px;
-    margin: 5% 25%;
+    padding: 20px;
+    margin: 5% 20%;
     background-color: tan;
 }
 
