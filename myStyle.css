@@ -1,0 +1,50 @@
+body{
+    background: url("images/background.png") no-repeat center fixed;     
+    background-size: cover;
+}
+.container {
+    text-align: center;
+}
+.container h1{
+    margin: auto;
+    width: 50%;
+    border: 3px solid black; 
+}
+.container h2{
+    margin-top: 0em;
+}
+
+a{
+    color:black;
+}
+
+#about-me{
+    float:left;
+    margin-left: 20%;
+}
+#contact-me{
+    float:right;
+    margin-right: 20%;
+}
+#about {
+    border: 3px black solid;
+    padding: 10px;
+    margin: 5% 25%;
+    background-color: tan;
+}
+
+#work
+{
+    border: 3px black solid;
+    padding: 10px;
+    margin: 5% 25%;
+    background-color: tan;
+}
+
+#contact{
+    border: 3px black solid;
+    padding: 10px;
+    margin: 5% 25%;
+    background-color: tan;
+}
+
