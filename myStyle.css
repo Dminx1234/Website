@@ -32,7 +32,6 @@ a:hover{
 #about-me{
     float:left;
     margin-left: 20%;
-    
 }
 #contact-me{
     float:right;
@@ -44,8 +43,6 @@ a:hover{
     margin: 5% 20%;
     background-color: rgba(209, 179, 139, 50%);
     text-align:center;
-    
-    
 }
 #work
 {
@@ -54,7 +51,6 @@ a:hover{
     margin: 5% 20%;
     background-color: rgba(209, 179, 139, 50%);
     text-align:center;
-    
 }
 #contact{
     border: 3px black solid;
