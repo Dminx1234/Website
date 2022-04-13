@@ -1,2 +1,2 @@
 # Repository
- This website gives information about me.
+ This website is a website
