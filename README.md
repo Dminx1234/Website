@@ -1,2 +1,2 @@
 # Repository
- This website is a website
+ A custom website to show off the work I have done.

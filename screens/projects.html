@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>💻Dom's Projects</title>
+  <link rel="stylesheet" type="text/css" href="../styles/style.css">
+</head>
+
+<body>
+  <header>
+    <div>
+      <h1>Dminx</h1>
+      <h2>Software Dev.</h2>
+    </div>
+    <a href="../index.html">Home</a>
+    <a class="selected" href="projects.html">Projects</a>
+    <a href="resume.html">Resume</a>
+  </header>
+  <main>
+    <h1>Completed Projects:</h1>
+    <a href="https://github.com/Dminx1234/Budgeting-App/tree/main">
+      <h2>Budgeting App</h2>
+    </a>
+    <div>This was my first app, it's honestly not that good. I wanted to try out react/expo.
+      The app basically keeps track of all your money and is a simple calculator for making a budget. I lost interest
+      in this app because I wanted to switch to Android Studio. Maybe I will come back to fix it one day.
+    </div>
+    <a href="../index.html">
+      <h2>My Website</h2>
+    </a>
+    <div>The website your currently on is also part of my projects, I thought it would be a cool way to show
+      my work and give information about me to help me excel in a future career.
+    </div>
+    <h1>WIP Projects:</h1>
+    <a href="https://github.com/Dminx1234/Tower-Defense">
+      <h2>Tower Defense Game</h2>
+    </a>
+    <div>I am exploring Unity and attempting to make a rouge-like tower defense game. I have not set a title of it just
+      yet.
+    </div>
+    <a href="projects.html">
+      <h2>Message Me</h2>
+    </a>
+    <div>This project will be a messager app for people to connect.
+    </div>
+    <a href="projects.html">
+      <h2>Places</h2>
+    </a>
+    <div>This project will eventually be an app where you can use a googles map and mark down cool places you have been
+      and
+      you don't want to forget. Or maybe you want to remind yourself that the food at a restraunt was awful at a certain
+      place.
+    </div>
+
+  </main>
+  <div class="cursor"></div>
+  <script>
+    const cursor = document.querySelector('.cursor');
+
+    document.addEventListener('mousemove', e => {
+      cursor.setAttribute("style", "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;")
+    })
+
+    document.addEventListener('click', () => {
+      cursor.classList.add("expand");
+
+      setTimeout(() => {
+        cursor.classList.remove("expand");
+      }, 500)
+    })
+  </script>
+</body>
+
+</html>
