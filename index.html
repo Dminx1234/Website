@@ -2,59 +2,58 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>💻Dom's Website</title>
-  <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💻Dom's Website</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
 </head>
 
 <body>
-  <header>
-    <div>
-      <h1>Dminx</h1>
-      <h2>Software Dev.</h2>
-    </div>
+    <header>
+        <div>
+            <h1>Dom's Website</h1>
 
-    <a class="selected" href="index.html">Home</a>
-    <a href="screens/projects.html">Projects</a>
-    <a href="screens/resume.html">Resume</a>
-  </header>
-  <main>
-    <h1>About Me:</h1>
-    <div>My name is Dominic and I use the name Dminx as my online username. I am currently going to University of
-      Buffalo to achieve a bachelors degree in computer science. I am driven to
-      learn and understand computers and planning on getting a career in it. So far, this website shows off some of the
-      projects I am working on and shows my resume with contact information.
-    </div>
-  </main>
-  <footer>
-    <div>
-      <h3>Contact Info</h3>
-      <ul>
-        <li>My email: <a href="mailto:19ddionne@gmail.com">19ddionne@gmail.com</a></li>
-        <li>My phone #: <a href="tel:+3153140976">315-314-0976</a> </li>
-        <li>My LinkedIn: <a href="https://www.linkedin.com/in/dominic-dionne-95288b23b/">LinkedIn</a></li>
-      </ul>
+        </div>
 
-    </div>
-  </footer>
-  <div class="cursor"></div>
-  <script>
-    const cursor = document.querySelector('.cursor');
+        <div>
+            <a class="selected" href="index.html">About Me</a>
+            <a href="screens/projects.html">Projects</a>
+            <a href="screens/contact.html">Contact Info</a>
+        </div>
 
-    document.addEventListener('mousemove', e => {
-      cursor.setAttribute("style", "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;")
-    })
+    </header>
+    <main>
+        <div>
+            <p>
+                My name is Dominic and my online username is Dminx, (Pronounced Dee-men-x).
+                I currently am pursuing a Bachelor's degree in computer science. I have experience
+                with Unity, C, C++, C#, and a few other languages. However, I am still exploring options for
+                my future career.
+            </p> 
+        </div>
+    </main>
+    <footer>
+        <div>
+            <p>© 2023 Dminx</p>
+        </div>
+    </footer>
+    <div class="cursor"></div>
+    <script>
+        const cursor = document.querySelector('.cursor');
 
-    document.addEventListener('click', () => {
-      cursor.classList.add("expand");
+        document.addEventListener('mousemove', e => {
+            cursor.setAttribute("style", "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;")
+        })
 
-      setTimeout(() => {
-        cursor.classList.remove("expand");
-      }, 500)
-    })
-  </script>
+        document.addEventListener('click', () => {
+            cursor.classList.add("expand");
+
+            setTimeout(() => {
+                cursor.classList.remove("expand");
+            }, 500)
+        })
+    </script>
 </body>
 
 </html>
