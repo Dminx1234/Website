@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💻Dom's Website</title>
+    <link rel="stylesheet" type="text/css" href="../styles/style.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>Dom's Website</h1>
+
+        </div>
+
+        <div>
+            <a href="../index.html">About Me</a>
+            <a class="selected" href="projects.html">Projects</a>
+            <a href="contact.html">Contact Info</a>
+        </div>
+
+    </header>
+    <main>
+        <div>
+            <p>
+                To be added tomorrow.
+            </p> 
+        </div>
+    </main>
+    <footer>
+        <div>
+            <p>© 2023 Dminx</p>
+        </div>
+    </footer>
+    <div class="cursor"></div>
+    <script>
+        const cursor = document.querySelector('.cursor');
+
+        document.addEventListener('mousemove', e => {
+            cursor.setAttribute("style", "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;")
+        })
+
+        document.addEventListener('click', () => {
+            cursor.classList.add("expand");
+
+            setTimeout(() => {
+                cursor.classList.remove("expand");
+            }, 500)
+        })
+    </script>
+</body>
+
+</html>
